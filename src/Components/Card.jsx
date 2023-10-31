@@ -1,7 +1,7 @@
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
-import ProductCard from './ProductCard'
+import CardProduct from './CardProduct'
 
 const Card = ({ products }) => {
   return (
@@ -27,7 +27,7 @@ const Card = ({ products }) => {
                         {products && 
                             products.map((product,index)=> {
                                 return(
-                                <ProductCard product={product} key={product.id} />
+                                <CardProduct product={product} key={product.id} />
                             )})
                         } 
                     </Splide>

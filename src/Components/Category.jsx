@@ -2,6 +2,7 @@ import React from 'react'
 import { FiFilter } from "react-icons/fi";
 import ImageSlider from './ImageSlider';
 import Card from './Card';
+import Products from './Products';
 
 const Category = ({ products }) => {
   return (
@@ -30,7 +31,11 @@ const Category = ({ products }) => {
       </div>
 
       {/* <ImageSlider /> */}
-      <Card products={products} />
+      <div className='p-5 bg-slate-500'>
+        <Card products={products} />
+      </div>
+      
+      <Products products={products} />
     </>
   )
 }
