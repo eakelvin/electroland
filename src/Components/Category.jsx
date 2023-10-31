@@ -3,7 +3,7 @@ import { FiFilter } from "react-icons/fi";
 import ImageSlider from './ImageSlider';
 import Card from './Card';
 
-const Category = () => {
+const Category = ({ products }) => {
   return (
     <>
       <div className='bg-gray-900 text-white'>
@@ -30,7 +30,7 @@ const Category = () => {
       </div>
 
       {/* <ImageSlider /> */}
-      <Card />
+      <Card products={products} />
     </>
   )
 }

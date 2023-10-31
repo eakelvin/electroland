@@ -3,7 +3,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 import ProductCard from './ProductCard'
 
-const Card = () => {
+const Card = ({ products }) => {
   return (
     <>
         <div className='w-full'>
@@ -24,9 +24,13 @@ const Card = () => {
                             }
                         }
                     }}>
-                       <ProductCard />
+                        {products && 
+                            products.map((product,index)=> {
+                                return(
+                                <ProductCard product={product} key={product.id} />
+                            )})
+                        } 
                     </Splide>
-                    
                 </div>
             </div>
       
