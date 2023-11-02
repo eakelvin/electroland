@@ -30,7 +30,6 @@ const Category = ({ products }) => {
         </div>
       </div>
 
-      {/* <ImageSlider /> */}
       <div className='p-5 bg-slate-500'>
         <Card products={products} />
       </div>
