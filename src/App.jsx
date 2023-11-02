@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
-import Navbar from './Components/Navbar'
 import Nav from './Components/Nav'
 import Footer from './Components/Footer'
 import Slider from './Components/Carousel'
