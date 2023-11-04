@@ -34,7 +34,9 @@ const Category = ({ products }) => {
         <Card products={products} />
       </div>
       
-      <Products products={products} />
+      <div className='p-5'>
+        <Products products={products} />
+      </div>
     </>
   )
 }
